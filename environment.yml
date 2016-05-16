@@ -1,12 +1,9 @@
 name: cb-resection
 dependencies:
 - backports_abc=0.4=py27_0
-- cairo=1.12.18=6
-- conda-env=2.4.5=py27_0
 - cycler=0.9.0=py27_0
 - decorator=4.0.9=py27_0
 - flake8=2.5.1=py27_0
-- fontconfig=2.11.1=5
 - freetype=2.5.5=0
 - futures=3.0.3=py27_0
 - h5py=2.5.0=np110py27_4
@@ -22,13 +19,11 @@ dependencies:
 - jupyter_client=4.2.2=py27_0
 - jupyter_console=4.1.1=py27_0
 - jupyter_core=4.1.0=py27_0
-- libgfortran=1.0=0
 - libpng=1.6.17=0
 - libsodium=1.0.3=0
 - libxml2=2.9.2=0
 - markupsafe=0.23=py27_0
 - mccabe=0.3.1=py27_0
-- mistune=0.7.2=py27_0
 - mkl=11.3.1=0
 - nbconvert=4.1.0=py27_0
 - nbformat=4.0.1=py27_0
@@ -43,10 +38,8 @@ dependencies:
 - pexpect=4.0.1=py27_0
 - pickleshare=0.5=py27_0
 - pip=8.1.1=py27_1
-- pixman=0.32.6=0
 - psutil=4.1.0=py27_0
 - ptyprocess=0.5=py27_0
-- pycairo=1.10.0=py27_0
 - pycosat=0.6.1=py27_0
 - pycrypto=2.6.1=py27_0
 - pyflakes=1.0.0=py27_0
@@ -62,7 +55,6 @@ dependencies:
 - qtconsole=4.2.0=py27_0
 - readline=6.2=2
 - requests=2.9.0=py27_0
-- scipy=0.17.0=np110py27_1
 - seaborn=0.7.0=py27_0
 - setuptools=20.3=py27_0
 - simplegeneric=0.8.1=py27_0
