@@ -1,0 +1,652 @@
+[1] "Reading Population PushPull"
+
+
+
+---Mixed Effects Models---
+[1] "Band: AlphaTheta"
+[1] "Epoch: Preictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -275.89 -271.31 140.94  -281.89                         
+model2  4 -275.78 -269.68 141.89  -283.78 1.8936      1     0.1688
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-275.7799 -269.6745  141.8900 -283.7799        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.001906
+ Residual               0.003370
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.001606          0.002346  
+      R2m       R2c 
+0.0000000 0.2991819 
+       R2m        R2c 
+0.08610812 0.30752524 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)  
+model1  3 -328.62 -324.04 167.31  -334.62                           
+model2  4 -330.04 -323.93 169.02  -338.04 3.4181      1    0.06449 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-330.0400 -323.9345  169.0200 -338.0400        30 
+Random effects:
+ Groups     Name        Std.Dev. 
+ Subject_ID (Intercept) 0.0009247
+ Residual               0.0014983
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.001481          0.001539  
+      R2m       R2c 
+0.0000000 0.3977811 
+      R2m       R2c 
+0.1639970 0.3945831 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -301.78 -297.20 153.89  -307.78                         
+model2  4 -299.96 -293.86 153.98  -307.96 0.1879      1     0.6647
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-299.9649 -293.8594  153.9824 -307.9649        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.001903
+ Residual               0.002200
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.001158          0.000582  
+      R2m       R2c 
+0.0000000 0.4473576 
+       R2m        R2c 
+0.01016866 0.43382064 
+
+
+
+[1] "Band: AlphaTheta"
+[1] "Epoch: Ictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -286.83 -282.25 146.41  -292.83                         
+model2  4 -285.97 -279.86 146.98  -293.97 1.1401      1     0.2856
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-285.9683 -279.8629  146.9842 -293.9683        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.003208
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.004391         -0.001187  
+R2m R2c 
+  0   0 
+       R2m        R2c 
+0.03394142 0.03394142 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -346.29 -341.71 176.14  -352.29                         
+model2  4 -344.37 -338.26 176.18  -352.37 0.0815      1     0.7753
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-344.3687 -338.2632  176.1843 -352.3687        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.001359
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0010674         0.0001334  
+         R2m          R2c 
+0.000000e+00 1.002358e-19 
+        R2m         R2c 
+0.002466567 0.002466567 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -315.25 -310.67 160.62  -321.25                         
+model2  4 -313.71 -307.61 160.86  -321.71 0.4637      1     0.4959
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-313.7127 -307.6073  160.8564 -321.7127        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.002133
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0005151         0.0005053  
+       R2m        R2c 
+0.00000000 0.02052509 
+       R2m        R2c 
+0.01419702 0.01419702 
+
+
+
+[1] "Band: Beta"
+[1] "Epoch: Preictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -270.39 -265.81 138.20  -276.39                         
+model2  4 -269.27 -263.16 138.63  -277.27 0.8724      1     0.3503
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-269.2659 -263.1604  138.6329 -277.2659        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.002461
+ Residual               0.003605
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.002298          0.001807  
+     R2m      R2c 
+0.000000 0.329729 
+      R2m       R2c 
+0.0421568 0.3466040 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -326.70 -322.13 166.35  -332.70                         
+model2  4 -324.88 -318.78 166.44  -332.88 0.1801      1     0.6713
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-324.8845 -318.7790  166.4422 -332.8845        30 
+Random effects:
+ Groups     Name        Std.Dev. 
+ Subject_ID (Intercept) 0.0008712
+ Residual               0.0016523
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.002085         -0.000372  
+      R2m       R2c 
+0.0000000 0.1816152 
+      R2m       R2c 
+0.0100768 0.2254162 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -298.16 -293.58 152.08  -304.16                         
+model2  4 -296.73 -290.62 152.36  -304.73 0.5638      1     0.4527
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-296.7267 -290.6213  152.3634 -304.7267        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.002737
+ Residual               0.002116
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.002928         -0.001226  
+      R2m       R2c 
+0.0000000 0.5818051 
+       R2m        R2c 
+0.03120867 0.63762543 
+
+
+
+[1] "Band: Beta"
+[1] "Epoch: Ictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -286.78 -282.20 146.39  -292.78                         
+model2  4 -284.79 -278.69 146.40  -292.79 0.0111      1     0.9161
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-284.7935 -278.6880  146.3967 -292.7935        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.003264
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0032229        -0.0001182  
+R2m R2c 
+  0   0 
+         R2m          R2c 
+0.0003363443 0.0003363443 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -339.01 -334.43 172.51  -345.01                         
+model2  4 -338.55 -332.44 173.28  -346.55 1.5381      1     0.2149
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-338.5495 -332.4441  173.2748 -346.5495        30 
+Random effects:
+ Groups     Name        Std.Dev. 
+ Subject_ID (Intercept) 0.0004805
+ Residual               0.0014134
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0011251         0.0007505  
+      R2m       R2c 
+0.0000000 0.1764062 
+       R2m        R2c 
+0.06092417 0.15819947 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)   
+model1  3 -302.01 -297.43 154.01  -308.01                            
+model2  4 -307.11 -301.00 157.55  -315.11 7.0933      1   0.007737 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-307.1050 -300.9995  157.5525 -315.1050        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.002351
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.000000          0.002285  
+       R2m        R2c 
+0.00000000 0.04821732 
+      R2m       R2c 
+0.1951663 0.1951663 
+
+
+
+[1] "Band: LowGamma"
+[1] "Epoch: Preictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -227.87 -223.29 116.94  -233.87                         
+model2  4 -225.90 -219.79 116.95  -233.90 0.0243      1     0.8762
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-225.8971 -219.7917  116.9486 -233.8971        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.005322
+ Residual               0.006633
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.005669         -0.000613  
+      R2m       R2c 
+0.0000000 0.3984832 
+        R2m         R2c 
+0.001332259 0.392468134 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -337.71 -333.13 171.85  -343.71                         
+model2  4 -335.79 -329.68 171.89  -343.79 0.0794      1     0.7781
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-335.7880 -329.6825  171.8940 -343.7880        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.001669
+ Residual               0.001162
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0024493        -0.0002691  
+      R2m       R2c 
+0.0000000 0.6573024 
+        R2m         R2c 
+0.004474775 0.675184910 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -301.24 -296.66 153.62  -307.24                         
+model2  4 -299.53 -293.43 153.77  -307.53 0.2926      1     0.5886
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-299.5339 -293.4285  153.7670 -307.5339        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.002122
+ Residual               0.002158
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.002135         -0.000744  
+      R2m       R2c 
+0.0000000 0.4956029 
+       R2m        R2c 
+0.01527737 0.49922575 
+
+
+
+[1] "Band: LowGamma"
+[1] "Epoch: Ictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)  
+model1  3 -202.28 -197.70 104.14  -208.28                           
+model2  4 -205.53 -199.42 106.76  -213.53 5.2488      1    0.02196 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-205.5247 -199.4193  106.7624 -213.5247        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.00000 
+ Residual               0.01047 
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.010168         -0.008756  
+       R2m        R2c 
+0.00000000 0.05202475 
+     R2m      R2c 
+0.152125 0.152125 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -342.89 -338.31 174.45  -348.89                         
+model2  4 -342.11 -336.01 175.06  -350.11 1.2211      1     0.2691
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-342.1143 -336.0089  175.0571 -350.1143        30 
+Random effects:
+ Groups     Name        Std.Dev. 
+ Subject_ID (Intercept) 0.0005304
+ Residual               0.0013223
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0013649         0.0008345  
+      R2m       R2c 
+0.0000000 0.2867852 
+       R2m        R2c 
+0.08093219 0.20831137 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)  
+model1  3 -310.21 -305.63 158.11  -316.21                           
+model2  4 -310.98 -304.88 159.49  -318.98 2.7655      1    0.09632 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-310.9801 -304.8746  159.4900 -318.9801        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.002527
+ Residual               0.001646
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0005177         0.0023087  
+      R2m       R2c 
+0.0000000 0.7724233 
+      R2m       R2c 
+0.1307511 0.7410761 
+
+
+
+[1] "Band: HighGamma"
+[1] "Epoch: Preictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df  AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -240 -235.42    123     -246                         
+model2  4 -238 -231.90    123     -246 0.0021      1     0.9635
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-238.0026 -231.8971  123.0013 -246.0026        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.003815
+ Residual               0.005733
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0042182         0.0001391  
+      R2m       R2c 
+0.0000000 0.3058238 
+         R2m          R2c 
+0.0001047287 0.3070352052 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -319.15 -314.57 162.58  -325.15                         
+model2  4 -317.29 -311.18 162.64  -325.29 0.1373      1      0.711
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-317.2885 -311.1831  162.6443 -325.2885        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.002024
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.002039          0.000258  
+         R2m          R2c 
+0.000000e+00 6.572851e-16 
+       R2m        R2c 
+0.00415122 0.00415122 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance Chisq Chi Df Pr(>Chisq)
+model1  3 -314.32 -309.74 160.16  -320.32                        
+model2  4 -314.42 -308.31 161.21  -322.42 2.101      1     0.1472
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-314.4205 -308.3150  161.2102 -322.4205        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.002111
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       0.0005229         0.0011705  
+      R2m       R2c 
+0.0000000 0.1333317 
+       R2m        R2c 
+0.07312273 0.07312273 
+
+
+
+[1] "Band: HighGamma"
+[1] "Epoch: Ictal"
+[1] "CType: Desync"
+Data: dat_sel
+Models:
+model1: Frac_Desync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -221.05 -216.47 113.53  -227.05                         
+model2  4 -219.36 -213.25 113.68  -227.36 0.3075      1     0.5792
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Desync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-219.3591 -213.2537  113.6795 -227.3591        30 
+Random effects:
+ Groups     Name        Std.Dev. 
+ Subject_ID (Intercept) 3.689e-10
+ Residual               8.545e-03
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.005353         -0.001632  
+         R2m          R2c 
+0.0000000000 0.0008752327 
+       R2m        R2c 
+0.00927771 0.00927771 
+[1] "CType: Bulk"
+Data: dat_sel
+Models:
+model1: Frac_Bulk_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -330.23 -325.65 168.12  -336.23                         
+model2  4 -328.23 -322.13 168.12  -336.23 0.0013      1     0.9712
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Bulk_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-328.2334 -322.1280  168.1167 -336.2334        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.001723
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       1.972e-03        -2.139e-05  
+R2m R2c 
+  0   0 
+         R2m          R2c 
+3.956123e-05 3.956123e-05 
+[1] "CType: Sync"
+Data: dat_sel
+Models:
+model1: Frac_Sync_SOZ ~ 1 + (1 | Subject_ID)
+model2: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance Chisq Chi Df Pr(>Chisq)  
+model1  3 -318.41 -313.83 162.21  -324.41                          
+model2  4 -319.89 -313.79 163.95  -327.89 3.481      1    0.06208 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Frac_Sync_SOZ ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-319.8936 -313.7881  163.9468 -327.8936        30 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.000000
+ Residual               0.001948
+Number of obs: 34, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+       1.488e-19         1.282e-03  
+        R2m         R2c 
+0.000000000 0.003871197 
+      R2m       R2c 
+0.1000045 0.1000045 

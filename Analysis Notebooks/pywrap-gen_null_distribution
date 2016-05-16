@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+source activate cb-resection
+ipython -c "import os; os.chdir('../'); import Codebase; Codebase.helpers.gen_null_distribution.execute('$1', '$2', '$3', '$4', '$5')"

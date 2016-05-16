@@ -1,0 +1,38 @@
+[1] "Reading Population Synchronizability"
+
+
+
+
+
+
+---Test Random Effects: Subjects, Events, Frequency Band---
+Data: dat
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID/Event_ID/Band_ID)
+model2: MeanSync ~ MeanDisp + (MeanDisp | Subject_ID/Event_ID/Band_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)    
+model1  5 -2947.8 -2921.8 1478.9  -2957.8                             
+model2 12 -5688.9 -5626.3 2856.5  -5712.9 2755.1      7  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+      R2m       R2c 
+0.8724125 0.9137195 
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ MeanDisp + (MeanDisp | Subject_ID/Event_ID/Band_ID)
+   Data: dat
+      AIC       BIC    logLik  deviance  df.resid 
+-5688.911 -5626.328  2856.455 -5712.911      1348 
+Random effects:
+ Groups                        Name        Std.Dev. Corr 
+ Band_ID:(Event_ID:Subject_ID) (Intercept) 0.02261       
+                               MeanDisp    0.17865  -1.00
+ Event_ID:Subject_ID           (Intercept) 0.01862       
+                               MeanDisp    0.11108  -1.00
+ Subject_ID                    (Intercept) 0.01509       
+                               MeanDisp    0.09661  -0.93
+ Residual                                  0.02740       
+Number of obs: 1360, groups:  
+Band_ID:(Event_ID:Subject_ID), 136; Event_ID:Subject_ID, 34; Subject_ID, 10
+Fixed Effects:
+(Intercept)     MeanDisp  
+      0.728       -1.636  

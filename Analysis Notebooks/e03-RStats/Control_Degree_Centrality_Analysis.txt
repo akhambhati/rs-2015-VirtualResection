@@ -1,0 +1,49 @@
+[1] "Reading Population Node Centrality Statistics"
+
+
+
+---Test Random Effects---
+Data: dat
+Models:
+model1: Control_Centrality_Mean ~ 1 + (1 | Subject_ID/Event_ID/Band_ID)
+model2: Control_Centrality_Mean ~ 1 + Degree_Centrality_Mean + (1 | Subject_ID/Event_ID/Band_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)    
+model1  5 -125309 -125270  62660  -125319                             
+model2  6 -126475 -126429  63244  -126487 1168.5      1  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+       R2m        R2c 
+0.08873365 0.10936845 
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: Control_Centrality_Mean ~ 1 + (1 | Subject_ID/Event_ID/Band_ID)
+   Data: dat
+       AIC        BIC     logLik   deviance   df.resid 
+-125309.02 -125270.02   62659.51 -125319.02      18003 
+Random effects:
+ Groups                        Name        Std.Dev. 
+ Band_ID:(Event_ID:Subject_ID) (Intercept) 0.000e+00
+ Event_ID:Subject_ID           (Intercept) 1.530e-09
+ Subject_ID                    (Intercept) 5.765e-04
+ Residual                                  7.453e-03
+Number of obs: 18008, groups:  
+Band_ID:(Event_ID:Subject_ID), 136; Event_ID:Subject_ID, 34; Subject_ID, 10
+Fixed Effects:
+(Intercept)  
+  0.0004022  
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: 
+Control_Centrality_Mean ~ 1 + Degree_Centrality_Mean + (1 | Subject_ID/Event_ID/Band_ID)
+   Data: dat
+       AIC        BIC     logLik   deviance   df.resid 
+-126475.50 -126428.71   63243.75 -126487.50      18002 
+Random effects:
+ Groups                        Name        Std.Dev. 
+ Band_ID:(Event_ID:Subject_ID) (Intercept) 0.0002978
+ Event_ID:Subject_ID           (Intercept) 0.0000000
+ Subject_ID                    (Intercept) 0.0010559
+ Residual                                  0.0072078
+Number of obs: 18008, groups:  
+Band_ID:(Event_ID:Subject_ID), 136; Event_ID:Subject_ID, 34; Subject_ID, 10
+Fixed Effects:
+           (Intercept)  Degree_Centrality_Mean  
+            -0.0056898               0.0004771  

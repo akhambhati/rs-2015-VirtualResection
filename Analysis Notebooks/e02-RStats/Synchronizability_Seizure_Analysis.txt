@@ -1,0 +1,326 @@
+[1] "Reading Population Synchronizability"
+
+
+
+
+
+
+---Test All Freq---
+
+
+
+---Preictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID/Band_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID/Band_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)   
+model1  4 -2057.8 -2039.7 1032.9  -2065.8                            
+model2  5 -2066.4 -2043.8 1038.2  -2076.4 10.623      1   0.001117 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID/Band_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-2066.370 -2043.760  1038.185 -2076.370       675 
+Random effects:
+ Groups             Name        Std.Dev.
+ Band_ID:Subject_ID (Intercept) 0.04082 
+ Subject_ID         (Intercept) 0.05923 
+ Residual                       0.04822 
+Number of obs: 680, groups:  Band_ID:Subject_ID, 40; Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.48075          -0.03888  
+      R2m       R2c 
+0.0000000 0.6299749 
+       R2m        R2c 
+0.04788441 0.70480836 
+
+
+
+---Ictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID/Band_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID/Band_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)  
+model1  4 -1800.8 -1782.7 904.38  -1808.8                           
+model2  5 -1802.7 -1780.1 906.34  -1812.7 3.9222      1    0.04765 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID/Band_ID)
+   Data: dat_sel
+       AIC        BIC     logLik   deviance   df.resid 
+-1802.6727 -1780.0623   906.3364 -1812.6727        675 
+Random effects:
+ Groups             Name        Std.Dev.
+ Band_ID:Subject_ID (Intercept) 0.03546 
+ Subject_ID         (Intercept) 0.02015 
+ Residual                       0.06024 
+Number of obs: 680, groups:  Band_ID:Subject_ID, 40; Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.35052           0.02491  
+      R2m       R2c 
+0.0000000 0.3515208 
+      R2m       R2c 
+0.0284179 0.3337925 
+
+
+
+
+
+
+---Test AlphaTheta---
+
+
+
+---Preictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -659.90 -650.49 332.95  -665.90                         
+model2  4 -660.16 -647.62 334.08  -668.16 2.2624      1     0.1326
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-660.1597 -647.6166  334.0799 -668.1597       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.05814 
+ Residual               0.03019 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.44397          -0.02142  
+      R2m       R2c 
+0.0000000 0.7714656 
+      R2m       R2c 
+0.0261039 0.7931889 
+
+
+
+---Ictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -504.97 -495.57 255.49  -510.97                         
+model2  4 -503.94 -491.40 255.97  -511.94 0.9664      1     0.3256
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-503.9398 -491.3966  255.9699 -511.9398       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.03355 
+ Residual               0.05065 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.36189           0.01724  
+      R2m       R2c 
+0.0000000 0.3034642 
+      R2m       R2c 
+0.0197758 0.3186923 
+
+
+
+
+
+
+---Test Beta---
+
+
+
+---Preictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -556.37 -546.96 281.18  -562.37                         
+model2  4 -554.66 -542.12 281.33  -562.66 0.2955      1     0.5867
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-554.6625 -542.1193  281.3313 -562.6625       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.04832 
+ Residual               0.04241 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+        0.470702         -0.009983  
+      R2m       R2c 
+0.0000000 0.5483488 
+        R2m         R2c 
+0.006005958 0.567554258 
+
+
+
+---Ictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -439.36 -429.95 222.68  -445.36                         
+model2  4 -439.28 -426.74 223.64  -447.28 1.9289      1     0.1649
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-439.2843 -426.7411  223.6422 -447.2843       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.02673 
+ Residual               0.06249 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.35426           0.02775  
+      R2m       R2c 
+0.0000000 0.2238301 
+       R2m        R2c 
+0.04010596 0.18861982 
+
+
+
+
+
+
+---Test LowGamma---
+
+
+
+---Preictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -461.79 -452.38 233.90  -467.79                         
+model2  4 -459.93 -447.39 233.97  -467.93 0.1378      1     0.7105
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-459.9297 -447.3865  233.9648 -467.9297       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.06012 
+ Residual               0.05623 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.50111          -0.00903  
+      R2m       R2c 
+0.0000000 0.5191347 
+        R2m         R2c 
+0.003006804 0.534856002 
+
+
+
+---Ictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)  
+model1  3 -409.79 -400.38 207.89  -415.79                           
+model2  4 -410.79 -398.25 209.40  -418.79 3.0029      1    0.08312 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-410.7904 -398.2472  209.3952 -418.7904       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.04561 
+ Residual               0.06650 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.36036           0.04471  
+      R2m       R2c 
+0.0000000 0.4082926 
+       R2m        R2c 
+0.07151975 0.36854873 
+
+
+
+
+
+
+---Test HighGamma---
+
+
+
+---Preictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)  
+model1  3 -438.63 -429.22 222.31  -444.63                           
+model2  4 -441.12 -428.57 224.56  -449.12 4.4917      1    0.03406 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-441.1179 -428.5747  224.5590 -449.1179       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.09225 
+ Residual               0.05813 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.47756          -0.06524  
+      R2m       R2c 
+0.0000000 0.5651211 
+       R2m        R2c 
+0.08233048 0.73919502 
+
+
+
+---Ictal---
+Data: dat_sel
+Models:
+model1: MeanSync ~ 1 + (1 | Subject_ID)
+model2: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+       Df     AIC     BIC logLik deviance  Chisq Chi Df Pr(>Chisq)
+model1  3 -450.24 -440.83 228.12  -456.24                         
+model2  4 -450.92 -438.38 229.46  -458.92 2.6864      1     0.1012
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: MeanSync ~ 1 + Seizure_ID + (1 | Subject_ID)
+   Data: dat_sel
+      AIC       BIC    logLik  deviance  df.resid 
+-450.9217 -438.3785  229.4609 -458.9217       166 
+Random effects:
+ Groups     Name        Std.Dev.
+ Subject_ID (Intercept) 0.02532 
+ Residual               0.06044 
+Number of obs: 170, groups:  Subject_ID, 10
+Fixed Effects:
+     (Intercept)  Seizure_IDPS+GEN  
+         0.31608           0.02813  
+      R2m       R2c 
+0.0000000 0.1771596 
+       R2m        R2c 
+0.04414726 0.18690138 
